@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#5DBCDB"
+    tools:context="com.example.android.climatehero.TrackDiet">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:fontFamily="Verdana"
+        android:textSize="36dp"
+        android:gravity="center"
+        android:text="What did you eat today?" />
+
+    <CheckBox
+        android:layout_width="150dp"
+        android:id="@+id/vegetarian"
+        android:layout_height="150dp"
+        android:background="@drawable/blueicon"
+        android:text="Vegetarian"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:fontFamily="verdana"
+        android:textSize="18dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="200dp" />
+
+    <CheckBox
+        android:layout_width="150dp"
+        android:id="@+id/local"
+        android:layout_height="150dp"
+        android:background="@drawable/blueicon"
+        android:text="Local grown food"
+        android:textColor="#FFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="verdana"
+        android:layout_marginTop="110dp" />
+
+    <CheckBox
+        android:layout_width="150dp"
+        android:id="@+id/chicken"
+        android:layout_height="150dp"
+        android:background="@drawable/blueicon"
+        android:text="Chicken and fish based"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:fontFamily="verdana"
+        android:layout_marginTop="275dp" />
+
+    <CheckBox
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/meat"
+        android:background="@drawable/blueicon"
+        android:text="Red meat  based"
+        android:textSize="18dp"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        android:fontFamily="verdana"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="200dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track next goal"
+        android:layout_alignParentRight="true"
+        android:onClick="trackNext"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFF"/>
+
+</RelativeLayout>
